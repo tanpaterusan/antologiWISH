@@ -28,6 +28,7 @@ window.addEventListener('DOMContentLoaded', event => {
 $.getJSON('data/list.json', function (data) {
     let karya = data.karya;
     $.each(karya, function (i, data) {
-        $('#daftar-karya').append(`<div class="card" style="width: 18rem;"><div class="card-body"><h5 class="card-title">`+data.judul+`</h5><h6 class="card-subtitle mb-2 text-body-secondary">`+data.penulis+`</h6><p class="card-text">`+data.deskripsi+`</p><a href="#" class="card-link">Selengkapnya ...</a><p class="card-link">`+data.tgl_kirim+`</p></div></div>`);
+        // $('#daftar-karya').append(`<div class="card" style="width: 18rem;"><div class="card-body"><h5 class="card-title">`+data.judul+`</h5><h6 class="card-subtitle mb-2 text-body-secondary">`+data.penulis+`,`+data.instansi+`</h6><p class="card-link">`+data.tgl_kirim+`</p></div></div>`);
+        $('#daftar-karya').append(`<div class="card border-success" ><div class="card-body"> Judul: <b>`+data.judul+`</b> <br> Penulis: `+data.penulis+`, `+data.instansi+` <br> Dikirim tanggal: `+data.tgl_kirim+`</div></div>`);
     });
 });
