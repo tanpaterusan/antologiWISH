@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport"
@@ -10,91 +12,31 @@
 			content>
 		<title>antologiWISH</title>
 		<!-- Favicon -->
-		<link rel="icon" type="image/x-icon" href="assets/antologi.png">
+		<link rel="icon" type="image/x-icon" href="../assets/antologi.png">
 		<!-- Core theme CSS (includes Bootstrap) -->
-		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" /> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
-		<link href="css/styles.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://kit.fontawesome.com/your-font-awesome-kit.js"
+			crossorigin="anonymous"></script>
+		<link href="../css/styles.css" rel="stylesheet">
+		<script>
+			$(function() {
+			$("#includedNavbar").load("../template/navbar.html");
+		}, );
+		</script>
+	</head>
+
+
 	<body>
 		<div class="d-flex"
 			id="wrapper">
 			<!-- Page content wrapper -->
 			<div id="page-content-wrapper">
 				<!-- Top navigation -->
-				<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-					<div class="container-fluid">
-						<a class="btn btn-warning"
-							href="beli.html">
-							Beli Buku
-              <i class="fa-solid fa-cart-shopping"></i>
-						</a>
-						<div class="collapse navbar-collapse"
-							id="navbarSupportedContent">
-							<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-								<li class="nav-item active">
-									<a class="nav-link"
-										href="index.html">
-										Home
-									</a>
-								</li>
-                <li class="nav-item active">
-									<a class="nav-link"
-										href="recording.html">
-										Arsip
-									</a>
-								</li>
-                <li class="nav-item active">
-									<a class="nav-link"
-										href="ketentuan.html">
-										Ketentuan
-									</a>
-								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle"
-										id="navbarDropdown"
-										href="#"
-										role="button"
-										data-bs-toggle="dropdown"
-										aria-haspopup="true"
-										aria-expanded="false">
-										Menu
-									</a>
-									<div class="dropdown-menu dropdown-menu-end"
-										aria-labelledby="navbarDropdown">
-										<a class="dropdown-item"
-											target="_blank"
-											href="https://forms.office.com/r/EEL6hfP3qG">
-											Short
-                    Profile
-										</a>
-										<a class="dropdown-item"
-											target="_blank"
-											href="https://forms.office.com/r/wZaTjMBSvY">
-											Kirim
-                    Tulisan
-										</a>
-										<a class="dropdown-item"
-											target="_blank"
-											href="list.html">
-											Daftar Karya
-										</a>
-										<div class="dropdown-divider"></div>
-										<a class="dropdown-item"
-											target="_blank"
-											href="https://wa.me/085336643226">
-											Contact Person
-										</a>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
+				<div id="includedNavbar"></div>
 
-				<!-- Term and Condition -->
-				<!-- Page content -->
+
+				<!-- content -->
 				<div class="container-fluid">
 					<div class="container mt-3">
 						<h5 class="mt-4 mb-3">Ketentuan Peserta</h5>
@@ -104,9 +46,9 @@
 									<th>1</th>
 									<td>
 										Penulis harus terdaftar sebagai anggota WISH.
-                Tidak ada syarat khusus untuk menjadi anggota WISH, selain harus perempuan.
-                Pendaftaran anggota WISH dapat diakses melalui: s.id/daftarwish.
-                Ingin tahu lebih banyak tentang WISH? Bisa cek ke instagram @wish.kemenkeu ya!
+									Tidak ada syarat khusus untuk menjadi anggota WISH, selain harus perempuan.
+									Pendaftaran anggota WISH dapat diakses melalui: s.id/daftarwish.
+									Ingin tahu lebih banyak tentang WISH? Bisa cek ke instagram @wish.kemenkeu ya!
 									</td>
 								</tr>
 								<tr>
@@ -132,7 +74,8 @@
 								<tr>
 									<th>1</th>
 									<td>
-										Tulisan merupakan pengalaman pribadi penulis dan/atau pandangan penulis atas pengalaman orang lain
+										Tulisan merupakan pengalaman pribadi penulis dan/atau pandangan penulis atas
+									pengalaman orang lain
 									</td>
 								</tr>
 								<tr>
@@ -186,7 +129,8 @@
 								<tr>
 									<th>10</th>
 									<td>
-										Naskah ditulis dengan font Times New Roman atau Arial dengan ukuran font 11 dan spasi 1,5
+										Naskah ditulis dengan font Times New Roman atau Arial dengan ukuran font 11 dan
+									spasi 1,5
 									</td>
 								</tr>
 								<tr>
@@ -200,7 +144,7 @@
 							</tbody>
 						</table>
 
-						
+
 					</div>
 				</div>
 			</div>
@@ -211,8 +155,10 @@
 			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
 			crossorigin="anonymous"></script>
 
+
 		<!-- Core theme JS -->
-		<script src="js/scripts.js"></script>
+		<script src="../js/scripts.js"></script>
 	</body>
+
 
 </html>

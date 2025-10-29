@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0">
+		<title>
+			Vanilla JS Role-Based Login
+		</title>
+		<style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f4f4f4; }
+        .container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 300px; }
+        .dashboard { display: none; padding: 20px; border: 1px solid #ccc; margin-top: 20px; }
+        h1, h2 { text-align: center; color: #333; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background-color: #4CAF50; color: white; padding: 14px 20px; margin: 8px 0; border: none; border-radius: 4px; cursor: pointer; width: 100%; }
+        button:hover { opacity: 0.8; }
+        #logoutBtn { background-color: #f44336; }
+        #message { color: red; text-align: center; margin-bottom: 15px; }
+    </style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Login</h1>
+			<div class="format_align_justify"
+				id="message"></div>
+			<form id="loginForm">
+				<div id="message"></div>
+				<label for="username">Username</label>
+				<input type="text"
+					id="username"
+					required>
+				<label for="password">Password</label>
+				<input type="password"
+					id="password"
+					required>
+				<button type="submit">Log In</button>
+			</form>
+			<div id="adminDashboard"
+				class="dashboard">
+				<h2>Admin Area ⚙️</h2>
+				<p>
+					Welcome, Administrator! You have full access.
+				</p>
+				<button id="logoutBtn">Logout</button>
+			</div>
+			<div id="userDashboard"
+				class="dashboard">
+				<h2>User Area 👋</h2>
+				<p>
+					Welcome, Standard User! You have limited access.
+				</p>
+				<button id="logoutBtn2">Logout</button>
+			</div>
+		</div>
+		<script src="js/logicLogin.js"></script>
+	</body>
+</html>
